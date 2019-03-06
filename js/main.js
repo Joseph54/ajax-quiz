@@ -3,7 +3,7 @@ $(document).ready(
     //The function that does the stuff.
     function () {
         //Make the AJAX call
-        $.ajax('http://api.tvmaze.com/search/shows?q=value', {
+        $.ajax('http://api.tvmaze.com/search/shows?q=:query', {
             method: "GET",
             dataType: "json"
         })
@@ -22,5 +22,11 @@ $(document).ready(
                             +' </tr>')
             })
         })
+    },
+    $(#submit-btn).click(function(e) {
+        e.preventDefault();
+        var search_show =
+
     }
+
 )
