@@ -3,7 +3,7 @@ $(document).ready(
     //The function that does the stuff.
     function () {
         //Make the AJAX call
-        $.ajax('http://api.tvmaze.com/singlesearch/shows?q=the+magicians&embed=episodes', {
+        $.ajax('http://api.tvmaze.com/search/shows?q=value', {
             method: "GET",
             dataType: "json"
         })
